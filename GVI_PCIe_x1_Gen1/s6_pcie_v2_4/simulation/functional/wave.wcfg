@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="wave_isim.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="board" />
+            <top_module name="numeric_bit" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test_interface" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vl_types" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="group138" type="group">
+      <obj_property name="label">System</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/board/EP/sys_clk_c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sys_clk_c</obj_property>
+         <obj_property name="ObjectShortName">sys_clk_c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/sys_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sys_reset</obj_property>
+         <obj_property name="ObjectShortName">sys_reset</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group146" type="group">
+      <obj_property name="label">AXI Common</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/board/EP/user_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">user_clk</obj_property>
+         <obj_property name="ObjectShortName">user_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/user_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">user_resett</obj_property>
+         <obj_property name="ObjectShortName">user_resett</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/user_lnk_up" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">user_lnk_up</obj_property>
+         <obj_property name="ObjectShortName">user_lnk_up</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/fc_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fc_sel[2:0]</obj_property>
+         <obj_property name="ObjectShortName">fc_sel[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/fc_nph" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fc_nph[7:0]</obj_property>
+         <obj_property name="ObjectShortName">fc_nph[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/fc_npd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fc_npd[11:0]</obj_property>
+         <obj_property name="ObjectShortName">fc_npd[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/fc_ph" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fc_ph[7:0]</obj_property>
+         <obj_property name="ObjectShortName">fc_ph[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/fc_pd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fc_pd[11:0]</obj_property>
+         <obj_property name="ObjectShortName">fc_pd[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/fc_cplh" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fc_cplh[7:0]</obj_property>
+         <obj_property name="ObjectShortName">fc_cplh[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/fc_cpld" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fc_cpld[11:0]</obj_property>
+         <obj_property name="ObjectShortName">fc_cpld[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group157" type="group">
+      <obj_property name="label">AXI Rx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/board/EP/m_axis_rx_tdata" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">m_axis_rx_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_rx_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/m_axis_rx_tready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">m_axis_rx_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_rx_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/m_axis_rx_tvalid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">m_axis_rx_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_rx_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/m_axis_rx_tlast" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">m_axis_rx_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_rx_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/m_axis_rx_tkeep" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">m_axis_rx_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_rx_tkeep[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/m_axis_rx_tuser" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">m_axis_rx_tuser[21:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_rx_tuser[21:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/rx_np_ok" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_np_ok</obj_property>
+         <obj_property name="ObjectShortName">rx_np_ok</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group158" type="group">
+      <obj_property name="label">AXI Tx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/board/EP/s_axis_tx_tdata" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_axis_tx_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tx_tdata[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/s_axis_tx_tready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_axis_tx_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tx_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/s_axis_tx_tvalid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_axis_tx_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tx_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/s_axis_tx_tlast" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_axis_tx_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tx_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/s_axis_tx_tkeep" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_axis_tx_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tx_tkeep[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/s_axis_tx_tuser" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_axis_tx_tuser[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tx_tuser[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/tx_err_drop" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tx_err_drop</obj_property>
+         <obj_property name="ObjectShortName">tx_err_drop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/tx_buf_av" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tx_buf_av[5:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_buf_av[5:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/tx_cfg_req" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tx_cfg_req</obj_property>
+         <obj_property name="ObjectShortName">tx_cfg_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/board/EP/tx_cfg_gnt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tx_cfg_gnt</obj_property>
+         <obj_property name="ObjectShortName">tx_cfg_gnt</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

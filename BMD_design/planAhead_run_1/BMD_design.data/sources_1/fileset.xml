@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1"
+		Minor="19">
+	<FileSet Name="sources_1"
+			Type="DesignSrcs"
+			RelSrcDir="$PSRCDIR/sources_1">
+		<Filter Type="EDIFSrcs"/>
+		<File Path="$PPRDIR/../xilinx_pcie_1_1_ep_s6.ngc">
+			<FileInfo>
+				<Attr Name="UsedInSynthesis"
+						Val="1"/>
+				<Attr Name="UsedInImplementation"
+						Val="1"/>
+				<Attr Name="UsedInSimulation"
+						Val="1"/>
+			</FileInfo>
+		</File>
+		<Config>
+			<Option Name="DesignMode"
+					Val="GateLvl"/>
+			<Option Name="GateLvlMode"
+					Val="EDIF"/>
+			<Option Name="TopModule"
+					Val="xilinx_pcie_1_1_ep_s6"/>
+			<Option Name="TopFile"
+					Val="$PPRDIR/../xilinx_pcie_1_1_ep_s6.ngc"/>
+		</Config>
+	</FileSet>
+</DARoots>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">GT_REFCLK_OUT</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_GT_REFCLK_OUT</arg>&apos;, was traced into <arg fmt="%s" index="4">BUFIO2</arg> instance <arg fmt="%s" index="5">s6_pcie_v2_4_i/gt_refclk_bufio2</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">BUFIO2</arg> output(s): 
+<arg fmt="%s" index="7">DIVCLK</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_s6_pcie_v2_4_i_gt_refclk_buf = PERIOD &quot;s6_pcie_v2_4_i_gt_refclk_buf&quot; TS_GT_REFCLK_OUT HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">s6_pcie_v2_4_i_gt_refclk_buf</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_s6_pcie_v2_4_i_gt_refclk_buf</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_s6_pcie_v2_4_i_clk_125 = PERIOD &quot;s6_pcie_v2_4_i_clk_125&quot; TS_s6_pcie_v2_4_i_gt_refclk_buf / 1.25 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">s6_pcie_v2_4_i_gt_refclk_buf</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_s6_pcie_v2_4_i_gt_refclk_buf</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_s6_pcie_v2_4_i_clk_250 = PERIOD &quot;s6_pcie_v2_4_i_clk_250&quot; TS_s6_pcie_v2_4_i_gt_refclk_buf / 2.5 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">s6_pcie_v2_4_i_gt_refclk_buf</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_s6_pcie_v2_4_i_gt_refclk_buf</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT2</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_s6_pcie_v2_4_i_clk_62_5 = PERIOD &quot;s6_pcie_v2_4_i_clk_62_5&quot; TS_s6_pcie_v2_4_i_gt_refclk_buf / 0.625 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET sys_clk_c PERIOD = 10ns;&gt; [D:/GitHub/AE-PCIE-DMA-AXI/GVI_PCIe_x1_Gen1/s6_pcie_v2_4/example_design/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf(134)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+</messages>
+

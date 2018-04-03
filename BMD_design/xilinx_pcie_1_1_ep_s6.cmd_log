@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/GitHub/AE-PCIE-DMA-AXI/BMD_design/xilinx_pcie_1_1_ep_s6.xst" -ofn "D:/GitHub/AE-PCIE-DMA-AXI/BMD_design/xilinx_pcie_1_1_ep_s6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/AE-PCIE-DMA-AXI/GVI_PCIe_x1_Gen1/s6_pcie_v2_4/example_design/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf -p xc6slx45t-csg324-3 xilinx_pcie_1_1_ep_s6.ngc xilinx_pcie_1_1_ep_s6.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o xilinx_pcie_1_1_ep_s6_map.ncd xilinx_pcie_1_1_ep_s6.ngd xilinx_pcie_1_1_ep_s6.pcf 
+par -w -intstyle ise -ol high -mt off xilinx_pcie_1_1_ep_s6_map.ncd xilinx_pcie_1_1_ep_s6.ncd xilinx_pcie_1_1_ep_s6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml xilinx_pcie_1_1_ep_s6.twx xilinx_pcie_1_1_ep_s6.ncd -o xilinx_pcie_1_1_ep_s6.twr xilinx_pcie_1_1_ep_s6.pcf 
+bitgen -intstyle ise -f xilinx_pcie_1_1_ep_s6.ut xilinx_pcie_1_1_ep_s6.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/AE-PCIE-DMA-AXI/GVI_PCIe_x1_Gen1/s6_pcie_v2_4/example_design/xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf -p xc6slx45t-csg324-3 xilinx_pcie_1_1_ep_s6.ngc xilinx_pcie_1_1_ep_s6.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o xilinx_pcie_1_1_ep_s6_map.ncd xilinx_pcie_1_1_ep_s6.ngd xilinx_pcie_1_1_ep_s6.pcf 
+par -w -intstyle ise -ol high -mt off xilinx_pcie_1_1_ep_s6_map.ncd xilinx_pcie_1_1_ep_s6.ncd xilinx_pcie_1_1_ep_s6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml xilinx_pcie_1_1_ep_s6.twx xilinx_pcie_1_1_ep_s6.ncd -o xilinx_pcie_1_1_ep_s6.twr xilinx_pcie_1_1_ep_s6.pcf 
+bitgen -intstyle ise -f xilinx_pcie_1_1_ep_s6.ut xilinx_pcie_1_1_ep_s6.ncd 

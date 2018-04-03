@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\AE-PCIE-DMA-AXI\BMD_design\xilinx_pcie_1_1_ep_s6.ncd
+OUTFILE=D:\GitHub\AE-PCIE-DMA-AXI\BMD_design\xilinx_pcie_1_1_ep_s6.bit
+FAMILY=Spartan6
+PART=xc6slx45t-3csg324
+WORKINGDIR=D:\GitHub\AE-PCIE-DMA-AXI\BMD_design
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,218 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Tue Apr 03 21:29:29 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pci_exp_rxn" LOCATE = SITE "C5" LEVEL 1;
+COMP "pci_exp_rxp" LOCATE = SITE "D5" LEVEL 1;
+COMP "sys_reset_n" LOCATE = SITE "G9" LEVEL 1;
+COMP "sys_clk_n" LOCATE = SITE "A8" LEVEL 1;
+COMP "pci_exp_txn" LOCATE = SITE "A4" LEVEL 1;
+COMP "sys_clk_p" LOCATE = SITE "B8" LEVEL 1;
+COMP "pci_exp_txp" LOCATE = SITE "B4" LEVEL 1;
+COMP "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i" LOCATE =
+        SITE "GTPA1_DUAL_X0Y0" LEVEL 1;
+PIN s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<154> =
+        BEL "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i"
+        PINNAME RXUSRCLK0;
+PIN s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<340> =
+        BEL "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i"
+        PINNAME TXUSRCLK0;
+TIMEGRP s6_pcie_v2_4_i_clk_250 = PIN
+        "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<154>"
+        PIN
+        "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<340>"
+        PIN
+        "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<154>"
+        PIN
+        "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<340>"
+        BEL "s6_pcie_v2_4_i/mgt2x_bufg";
+PIN s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<156> =
+        BEL "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i"
+        PINNAME RXUSRCLK20;
+PIN s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<342> =
+        BEL "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i"
+        PINNAME TXUSRCLK20;
+PIN s6_pcie_v2_4_i/PCIE_A1_pins<218> = BEL "s6_pcie_v2_4_i/PCIE_A1" PINNAME
+        MGTCLK;
+TIMEGRP s6_pcie_v2_4_i_clk_125 = PIN
+        "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<156>"
+        PIN
+        "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<342>"
+        PIN
+        "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<156>"
+        PIN
+        "s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i_pins<342>"
+        BEL "s6_pcie_v2_4_i/mgt_bufg" PIN "s6_pcie_v2_4_i/PCIE_A1_pins<218>";
+PIN s6_pcie_v2_4_i/PCIE_A1_pins<548> = BEL "s6_pcie_v2_4_i/PCIE_A1" PINNAME
+        USERCLK;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[3].ram/ramb16_pins<28> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[3].ram/ramb16"
+        PINNAME CLKA;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[3].ram/ramb16_pins<29> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[3].ram/ramb16"
+        PINNAME CLKB;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16_pins<28> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16"
+        PINNAME CLKA;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16_pins<29> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16"
+        PINNAME CLKB;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16_pins<28> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16"
+        PINNAME CLKA;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16_pins<29> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16"
+        PINNAME CLKB;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16_pins<28> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16"
+        PINNAME CLKA;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16_pins<29> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16"
+        PINNAME CLKB;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[3].ram/ramb16_pins<28> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[3].ram/ramb16"
+        PINNAME CLKA;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[3].ram/ramb16_pins<29> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[3].ram/ramb16"
+        PINNAME CLKB;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/ramb16_pins<28> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/ramb16"
+        PINNAME CLKA;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/ramb16_pins<29> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/ramb16"
+        PINNAME CLKB;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/ramb16_pins<28> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/ramb16"
+        PINNAME CLKA;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/ramb16_pins<29> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/ramb16"
+        PINNAME CLKB;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16_pins<28> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16"
+        PINNAME CLKA;
+PIN s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16_pins<29> =
+        BEL "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16"
+        PINNAME CLKB;
+TIMEGRP s6_pcie_v2_4_i_clk_62_5 = BEL "s6_pcie_v2_4_i/phy_bufg" PIN
+        "s6_pcie_v2_4_i/PCIE_A1_pins<548>" BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tuser_21"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_30"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_29"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_15"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_9"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_8"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_7"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_6"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_5"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_4"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_3"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_2"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_1"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tdata_0"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/m_axis_rx_tvalid"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/trn_rsrc_dsc_d"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_10"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_9"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_8"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_7"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_6"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_5"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_4"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_3"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_2"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_1"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/reg_pkt_len_counter_0"
+        BEL "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_null_gen_inst/cur_state"
+        BEL "app/BMD/BMD_CF/cfg_intf_state_FSM_FFd1" BEL
+        "app/BMD/BMD_CF/cfg_intf_state_FSM_FFd2" BEL
+        "app/BMD/BMD_CF/cfg_intf_state_FSM_FFd3" BEL
+        "app/BMD/BMD_CF/cfg_dwaddr_4" BEL "app/BMD/BMD_CF/cfg_dwaddr_3" BEL
+        "app/BMD/BMD_CF/cfg_dwaddr_2" BEL "app/BMD/BMD_CF/cfg_dwaddr_1" BEL
+        "app/BMD/BMD_CF/cfg_dwaddr_0" BEL "app/BMD/BMD_CF/cfg_bme_state" BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/trn_rdst_rdy"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/reg_dsc_detect"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/trn_in_packet"
+        BEL
+        "s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/null_mux_sel"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[3].ram/ramb16_pins<28>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[3].ram/ramb16_pins<29>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16_pins<28>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16_pins<29>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16_pins<28>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16_pins<29>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16_pins<28>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16_pins<29>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[3].ram/ramb16_pins<28>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[3].ram/ramb16_pins<29>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/ramb16_pins<28>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[2].ram/ramb16_pins<29>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/ramb16_pins<28>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[1].ram/ramb16_pins<29>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16_pins<28>"
+        PIN
+        "s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/ramb16_pins<29>";
+PIN s6_pcie_v2_4_i/gt_refclk_bufio2_pins<1> = BEL
+        "s6_pcie_v2_4_i/gt_refclk_bufio2" PINNAME I;
+TIMEGRP GT_REFCLK_OUT = PIN "s6_pcie_v2_4_i/gt_refclk_bufio2_pins<1>";
+PIN s6_pcie_v2_4_i/pll_base_i/PLL_ADV_pins<2> = BEL
+        "s6_pcie_v2_4_i/pll_base_i/PLL_ADV" PINNAME CLKIN1;
+TIMEGRP s6_pcie_v2_4_i_gt_refclk_buf = PIN
+        "s6_pcie_v2_4_i/pll_base_i/PLL_ADV_pins<2>";
+NET "sys_clk_c" PERIOD = 10 ns HIGH 50%;
+TS_GT_REFCLK_OUT = PERIOD TIMEGRP "GT_REFCLK_OUT" 10 ns HIGH 50%;
+TS_s6_pcie_v2_4_i_gt_refclk_buf = PERIOD TIMEGRP
+        "s6_pcie_v2_4_i_gt_refclk_buf" TS_GT_REFCLK_OUT HIGH 50%;
+TS_s6_pcie_v2_4_i_clk_125 = PERIOD TIMEGRP "s6_pcie_v2_4_i_clk_125"
+        TS_s6_pcie_v2_4_i_gt_refclk_buf / 1.25 HIGH 50%;
+TS_s6_pcie_v2_4_i_clk_250 = PERIOD TIMEGRP "s6_pcie_v2_4_i_clk_250"
+        TS_s6_pcie_v2_4_i_gt_refclk_buf / 2.5 HIGH 50%;
+TS_s6_pcie_v2_4_i_clk_62_5 = PERIOD TIMEGRP "s6_pcie_v2_4_i_clk_62_5"
+        TS_s6_pcie_v2_4_i_gt_refclk_buf / 0.625 HIGH 50%;
+PIN sys_reset_n_pins<0> = BEL "sys_reset_n" PINNAME PAD;
+PIN "sys_reset_n_pins<0>" TIG;
+SCHEMATIC END;
+

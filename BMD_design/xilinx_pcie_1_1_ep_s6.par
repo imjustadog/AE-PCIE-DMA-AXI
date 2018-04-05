@@ -1,7 +1,7 @@
 Release 13.4 par O.87xd (nt64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-ZWQ-PC::  Tue Apr 03 21:29:32 2018
+ZWQ-PC::  Thu Apr 05 21:19:20 2018
 
 par -w -intstyle ise -ol high -mt off xilinx_pcie_1_1_ep_s6_map.ncd
 xilinx_pcie_1_1_ep_s6.ncd xilinx_pcie_1_1_ep_s6.pcf 
@@ -22,26 +22,30 @@ Device speed data version:  "PRODUCTION 1.21 2012-01-07".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    42 out of  54,576    1%
-    Number used as Flip Flops:                  41
+  Number of Slice Registers:                 1,166 out of  54,576    2%
+    Number used as Flip Flops:               1,166
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:                1
-  Number of Slice LUTs:                         74 out of  27,288    1%
-    Number used as logic:                       74 out of  27,288    1%
-      Number using O6 output only:              47
-      Number using O5 output only:               1
-      Number using O5 and O6:                   26
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      1,212 out of  27,288    4%
+    Number used as logic:                    1,183 out of  27,288    4%
+      Number using O6 output only:             693
+      Number using O5 output only:             131
+      Number using O5 and O6:                  359
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   6,408    0%
+    Number used exclusively as route-thrus:     29
+      Number with same-slice register load:     21
+      Number with same-slice carry load:         8
+      Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    30 out of   6,822    1%
-  Nummber of MUXCYs used:                       28 out of  13,644    1%
-  Number of LUT Flip Flop pairs used:           86
-    Number with an unused Flip Flop:            46 out of      86   53%
-    Number with an unused LUT:                  12 out of      86   13%
-    Number of fully used LUT-FF pairs:          28 out of      86   32%
+  Number of occupied Slices:                   456 out of   6,822    6%
+  Nummber of MUXCYs used:                      332 out of  13,644    2%
+  Number of LUT Flip Flop pairs used:        1,534
+    Number with an unused Flip Flop:           518 out of   1,534   33%
+    Number with an unused LUT:                 322 out of   1,534   20%
+    Number of fully used LUT-FF pairs:         694 out of   1,534   45%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -77,7 +81,7 @@ Specific Feature Utilization:
   Number of BUFHs:                               0 out of     256    0%
   Number of BUFPLLs:                             0 out of       8    0%
   Number of BUFPLL_MCBs:                         0 out of       4    0%
-  Number of DSP48A1s:                            0 out of      58    0%
+  Number of DSP48A1s:                            1 out of      58    1%
   Number of GTPA1_DUALs:                         1 out of       2   50%
     Number of LOCed GTPA1_DUALs:                 1 out of       1  100%
   Number of ICAPs:                               0 out of       1    0%
@@ -93,35 +97,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 secs 
-Finished initial Timing Analysis.  REAL time: 4 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 Starting Router
 
 
-Phase  1  : 1984 unrouted;      REAL time: 5 secs 
+Phase  1  : 8965 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 756 unrouted;      REAL time: 6 secs 
+Phase  2  : 6846 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 243 unrouted;      REAL time: 8 secs 
+Phase  3  : 3443 unrouted;      REAL time: 22 secs 
 
-Phase  4  : 243 unrouted; (Setup:0, Hold:1746, Component Switching Limit:0)     REAL time: 9 secs 
+Phase  4  : 3443 unrouted; (Setup:0, Hold:8231, Component Switching Limit:0)     REAL time: 23 secs 
 
 Updating file: xilinx_pcie_1_1_ep_s6.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:1747, Component Switching Limit:0)     REAL time: 10 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:6619, Component Switching Limit:0)     REAL time: 49 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:1747, Component Switching Limit:0)     REAL time: 10 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:6619, Component Switching Limit:0)     REAL time: 49 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:1747, Component Switching Limit:0)     REAL time: 10 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:6619, Component Switching Limit:0)     REAL time: 49 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:1747, Component Switching Limit:0)     REAL time: 10 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:6619, Component Switching Limit:0)     REAL time: 49 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 50 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
-Total REAL time to Router completion: 11 secs 
-Total CPU time to Router completion: 11 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 51 secs 
+Total REAL time to Router completion: 51 secs 
+Total CPU time to Router completion: 51 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -139,21 +143,21 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            user_clk | BUFGMUX_X3Y13| No   |   33 |  0.038     |  1.261      |
-+---------------------+--------------+------+------+------------+-------------+
 |s6_pcie_v2_4_i/mgt_c |              |      |      |            |             |
 |                  lk |  BUFGMUX_X2Y2| No   |    3 |  0.082     |  1.311      |
 +---------------------+--------------+------+------+------------+-------------+
 |s6_pcie_v2_4_i/mgt_c |              |      |      |            |             |
 |               lk_2x |  BUFGMUX_X2Y3| No   |    2 |  0.009     |  1.311      |
 +---------------------+--------------+------+------+------------+-------------+
+|            user_clk | BUFGMUX_X3Y13| No   |  378 |  0.047     |  1.262      |
++---------------------+--------------+------+------+------------+-------------+
+|           sys_clk_c |         Local|      |    1 |  0.000     |  0.001      |
++---------------------+--------------+------+------+------------+-------------+
 |refclk_ibuf_ML_IBUF2 |              |      |      |            |             |
 |                     |         Local|      |    1 |  0.000     |  0.002      |
 +---------------------+--------------+------+------+------------+-------------+
 |refclk_ibuf_ML_IBUF1 |              |      |      |            |             |
 |                     |         Local|      |    1 |  0.000     |  0.002      |
-+---------------------+--------------+------+------+------------+-------------+
-|           sys_clk_c |         Local|      |    1 |  0.000     |  0.001      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -179,8 +183,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   P "s6_pcie_v2_4_i_clk_125"         TS_s6_ | HOLD        |     0.254ns|            |       0|           0
   pcie_v2_4_i_gt_refclk_buf / 1.25 HIGH 50% | MINPERIOD   |     0.000ns|     8.000ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_s6_pcie_v2_4_i_clk_62_5 = PERIOD TIMEG | SETUP       |     7.999ns|     8.001ns|       0|           0
-  RP "s6_pcie_v2_4_i_clk_62_5"         TS_s | HOLD        |     0.414ns|            |       0|           0
+  TS_s6_pcie_v2_4_i_clk_62_5 = PERIOD TIMEG | SETUP       |     6.760ns|     9.240ns|       0|           0
+  RP "s6_pcie_v2_4_i_clk_62_5"         TS_s | HOLD        |     0.232ns|            |       0|           0
   6_pcie_v2_4_i_gt_refclk_buf / 0.625 HIGH  | MINPERIOD   |     0.000ns|    16.000ns|       0|           0
   50%                                       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
@@ -209,12 +213,12 @@ Derived Constraints for TS_GT_REFCLK_OUT
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GT_REFCLK_OUT               |     10.000ns|      0.925ns|     10.000ns|            0|            0|            0|         2064|
-| TS_s6_pcie_v2_4_i_gt_refclk_bu|     10.000ns|      3.334ns|     10.000ns|            0|            0|            0|         2064|
+|TS_GT_REFCLK_OUT               |     10.000ns|      0.925ns|     10.000ns|            0|            0|            0|        30579|
+| TS_s6_pcie_v2_4_i_gt_refclk_bu|     10.000ns|      3.334ns|     10.000ns|            0|            0|            0|        30579|
 | f                             |             |             |             |             |             |             |             |
 |  TS_s6_pcie_v2_4_i_clk_125    |      8.000ns|      8.000ns|          N/A|            0|            0|           45|            0|
 |  TS_s6_pcie_v2_4_i_clk_250    |      4.000ns|      3.125ns|          N/A|            0|            0|            0|            0|
-|  TS_s6_pcie_v2_4_i_clk_62_5   |     16.000ns|     16.000ns|          N/A|            0|            0|         2019|            0|
+|  TS_s6_pcie_v2_4_i_clk_62_5   |     16.000ns|     16.000ns|          N/A|            0|            0|        30534|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -224,10 +228,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 12 secs 
-Total CPU time to PAR completion: 12 secs 
+Total REAL time to PAR completion: 52 secs 
+Total CPU time to PAR completion: 52 secs 
 
-Peak Memory Usage:  379 MB
+Peak Memory Usage:  436 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\GitHub\AE-PCIE-DMA-AXI\download\impact.xsl
+OUTFILE=D:\GitHub\AE-PCIE-DMA-AXI\download\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\GitHub\AE-PCIE-DMA-AXI\download
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator O.87xd
+# Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION O.87xd
+DATE            04/05/2018 - 21:21
+SOURCE          D:\GitHub\AE-PCIE-DMA-AXI\download\axi.mcs
+DEVICE          8192K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x69222D72
+START_ADDRESS   0x00000000 END_ADDRESS 0x0016A673 DIRECTION_UP   "D:/GitHub/AE-PCIE-DMA-AXI/BMD_design/xilinx_pcie_1_1_ep_s6.bit" 6slx45tcsg324

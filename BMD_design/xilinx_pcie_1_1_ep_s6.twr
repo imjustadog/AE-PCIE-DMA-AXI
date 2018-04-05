@@ -181,13 +181,13 @@ Slack (setup path):     4.135ns (requirement - (data path - clock path skew + un
 
 --------------------------------------------------------------------------------
 
-Paths for end point s6_pcie_v2_4_i/PCIE_A1 (PCIE_X0Y0.PIPERXDATAA11), 1 path
+Paths for end point s6_pcie_v2_4_i/PCIE_A1 (PCIE_X0Y0.PIPERXDATAA10), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     4.136ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     4.166ns (requirement - (data path - clock path skew + uncertainty))
   Source:               s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i (HSIO)
   Destination:          s6_pcie_v2_4_i/PCIE_A1 (CPU)
   Requirement:          8.000ns
-  Data Path Delay:      3.664ns (Levels of Logic = 0)
+  Data Path Delay:      3.634ns (Levels of Logic = 0)
   Clock Path Skew:      -0.107ns (0.464 - 0.571)
   Source Clock:         s6_pcie_v2_4_i/mgt_clk rising at 0.000ns
   Destination Clock:    s6_pcie_v2_4_i/mgt_clk rising at 8.000ns
@@ -202,14 +202,14 @@ Slack (setup path):     4.136ns (requirement - (data path - clock path skew + un
     Location                 Delay type         Delay(ns)  Physical Resource
                                                            Logical Resource(s)
     -----------------------------------------------------  -------------------
-    GTPA1_DUAL_X0Y0.RXDATA03 Tgtpcko_RXDATA        1.100   s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
+    GTPA1_DUAL_X0Y0.RXDATA02 Tgtpcko_RXDATA        1.100   s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
                                                            s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
-    PCIE_X0Y0.PIPERXDATAA11  net (fanout=1)        1.364   s6_pcie_v2_4_i/rx_data<3>
+    PCIE_X0Y0.PIPERXDATAA10  net (fanout=1)        1.334   s6_pcie_v2_4_i/rx_data<2>
     PCIE_X0Y0.MGTCLK         Tpcicck_MGT           1.200   s6_pcie_v2_4_i/PCIE_A1
                                                            s6_pcie_v2_4_i/PCIE_A1
     -----------------------------------------------------  ---------------------------
-    Total                                          3.664ns (2.300ns logic, 1.364ns route)
-                                                           (62.8% logic, 37.2% route)
+    Total                                          3.634ns (2.300ns logic, 1.334ns route)
+                                                           (63.3% logic, 36.7% route)
 
 --------------------------------------------------------------------------------
 
@@ -244,40 +244,13 @@ Slack (hold path):      0.254ns (requirement - (clock path skew + uncertainty - 
 
 --------------------------------------------------------------------------------
 
-Paths for end point s6_pcie_v2_4_i/PCIE_A1 (PCIE_X0Y0.PIPERXCHARISKA1), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.281ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i (HSIO)
-  Destination:          s6_pcie_v2_4_i/PCIE_A1 (CPU)
-  Requirement:          0.000ns
-  Data Path Delay:      0.208ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.073ns (0.201 - 0.274)
-  Source Clock:         s6_pcie_v2_4_i/mgt_clk rising at 8.000ns
-  Destination Clock:    s6_pcie_v2_4_i/mgt_clk rising at 8.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i to s6_pcie_v2_4_i/PCIE_A1
-    Location                    Delay type         Delay(ns)  Physical Resource
-                                                              Logical Resource(s)
-    --------------------------------------------------------  -------------------
-    GTPA1_DUAL_X0Y0.RXCHARISK00 Tgtpcko_RXCHARISK     0.565   s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
-                                                              s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
-    PCIE_X0Y0.PIPERXCHARISKA1   net (fanout=1)        0.493   s6_pcie_v2_4_i/rx_char_is_k<0>
-    PCIE_X0Y0.MGTCLK            Tpcickc_MGT (-Th)     0.850   s6_pcie_v2_4_i/PCIE_A1
-                                                              s6_pcie_v2_4_i/PCIE_A1
-    --------------------------------------------------------  ---------------------------
-    Total                                             0.208ns (-0.285ns logic, 0.493ns route)
-                                                              (-137.0% logic, 237.0% route)
-
---------------------------------------------------------------------------------
-
 Paths for end point s6_pcie_v2_4_i/PCIE_A1 (PCIE_X0Y0.PIPERXDATAA9), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.294ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      0.323ns (requirement - (clock path skew + uncertainty - data path))
   Source:               s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i (HSIO)
   Destination:          s6_pcie_v2_4_i/PCIE_A1 (CPU)
   Requirement:          0.000ns
-  Data Path Delay:      0.221ns (Levels of Logic = 0)
+  Data Path Delay:      0.250ns (Levels of Logic = 0)
   Clock Path Skew:      -0.073ns (0.201 - 0.274)
   Source Clock:         s6_pcie_v2_4_i/mgt_clk rising at 8.000ns
   Destination Clock:    s6_pcie_v2_4_i/mgt_clk rising at 8.000ns
@@ -289,12 +262,39 @@ Slack (hold path):      0.294ns (requirement - (clock path skew + uncertainty - 
     -----------------------------------------------------  -------------------
     GTPA1_DUAL_X0Y0.RXDATA01 Tgtpcko_RXDATA        0.565   s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
                                                            s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
-    PCIE_X0Y0.PIPERXDATAA9   net (fanout=1)        0.506   s6_pcie_v2_4_i/rx_data<1>
+    PCIE_X0Y0.PIPERXDATAA9   net (fanout=1)        0.535   s6_pcie_v2_4_i/rx_data<1>
     PCIE_X0Y0.MGTCLK         Tpcickc_MGT (-Th)     0.850   s6_pcie_v2_4_i/PCIE_A1
                                                            s6_pcie_v2_4_i/PCIE_A1
     -----------------------------------------------------  ---------------------------
-    Total                                          0.221ns (-0.285ns logic, 0.506ns route)
-                                                           (-129.0% logic, 229.0% route)
+    Total                                          0.250ns (-0.285ns logic, 0.535ns route)
+                                                           (-114.0% logic, 214.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point s6_pcie_v2_4_i/PCIE_A1 (PCIE_X0Y0.PIPERXCHARISKA1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.363ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i (HSIO)
+  Destination:          s6_pcie_v2_4_i/PCIE_A1 (CPU)
+  Requirement:          0.000ns
+  Data Path Delay:      0.290ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.073ns (0.201 - 0.274)
+  Source Clock:         s6_pcie_v2_4_i/mgt_clk rising at 8.000ns
+  Destination Clock:    s6_pcie_v2_4_i/mgt_clk rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i to s6_pcie_v2_4_i/PCIE_A1
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    GTPA1_DUAL_X0Y0.RXCHARISK00 Tgtpcko_RXCHARISK     0.565   s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
+                                                              s6_pcie_v2_4_i/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i
+    PCIE_X0Y0.PIPERXCHARISKA1   net (fanout=1)        0.575   s6_pcie_v2_4_i/rx_char_is_k<0>
+    PCIE_X0Y0.MGTCLK            Tpcickc_MGT (-Th)     0.850   s6_pcie_v2_4_i/PCIE_A1
+                                                              s6_pcie_v2_4_i/PCIE_A1
+    --------------------------------------------------------  ---------------------------
+    Total                                             0.290ns (-0.285ns logic, 0.575ns route)
+                                                              (-98.3% logic, 198.3% route)
 
 --------------------------------------------------------------------------------
 
@@ -371,19 +371,19 @@ Timing constraint: TS_s6_pcie_v2_4_i_clk_62_5 = PERIOD TIMEGRP
 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 2019 paths analyzed, 568 endpoints analyzed, 0 failing endpoints
+ 30534 paths analyzed, 5628 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
  Minimum period is  16.000ns.
 --------------------------------------------------------------------------------
 
-Paths for end point s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16 (RAMB16_X0Y60.RSTA), 1 path
+Paths for end point app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_1 (SLICE_X2Y120.SR), 2 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     7.999ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     6.760ns (requirement - (data path - clock path skew + uncertainty))
   Source:               s6_pcie_v2_4_i/PCIE_A1 (CPU)
-  Destination:          s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16 (RAM)
+  Destination:          app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_1 (FF)
   Requirement:          16.000ns
-  Data Path Delay:      7.899ns (Levels of Logic = 1)
-  Clock Path Skew:      0.003ns (0.486 - 0.483)
+  Data Path Delay:      9.136ns (Levels of Logic = 1)
+  Clock Path Skew:      0.001ns (0.484 - 0.483)
   Source Clock:         user_clk rising at 0.000ns
   Destination Clock:    user_clk rising at 16.000ns
   Clock Uncertainty:    0.105ns
@@ -393,32 +393,163 @@ Slack (setup path):     7.999ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.198ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16
+  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    PCIE_X0Y0.TRNLNKUPN  Tpcicko_TRN           1.600   s6_pcie_v2_4_i/PCIE_A1
+                                                       s6_pcie_v2_4_i/PCIE_A1
+    SLICE_X24Y96.A1      net (fanout=19)       1.960   s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/trn_lnk_up_inv
+    SLICE_X24Y96.AMUX    Tilo                  0.251   app/BMD/BMD_EP/EP_TX/BMD_INTR_CTRL/wr_intr_state_FSM_FFd1
+                                                       app/BMD/BMD_EP/EP_TX/rst_n_inv1
+    SLICE_X2Y120.SR      net (fanout=285)      4.883   app/BMD/BMD_CF/rst_n_0
+    SLICE_X2Y120.CLK     Tsrck                 0.442   app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0<3>
+                                                       app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.136ns (2.293ns logic, 6.843ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.772ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               s6_pcie_v2_4_i/PCIE_A1 (CPU)
+  Destination:          app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_1 (FF)
+  Requirement:          16.000ns
+  Data Path Delay:      9.124ns (Levels of Logic = 1)
+  Clock Path Skew:      0.001ns (0.484 - 0.483)
+  Source Clock:         user_clk rising at 0.000ns
+  Destination Clock:    user_clk rising at 16.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
     PCIE_X0Y0.USERRSTN   Tpcicko_RESET         1.600   s6_pcie_v2_4_i/PCIE_A1
                                                        s6_pcie_v2_4_i/PCIE_A1
-    SLICE_X23Y107.D5     net (fanout=2)        2.232   s6_pcie_v2_4_i/user_reset_out_w
-    SLICE_X23Y107.D      Tilo                  0.259   s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/trn_rsrc_dsc_d
-                                                       s6_pcie_v2_4_i/user_reset_out1_INV_0
-    RAMB16_X0Y60.RSTA    net (fanout=29)       3.693   user_reset
-    RAMB16_X0Y60.CLKA    Trcck_RST             0.115   s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16
-                                                       s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16
+    SLICE_X24Y96.A4      net (fanout=19)       1.948   s6_pcie_v2_4_i/user_reset_out_w
+    SLICE_X24Y96.AMUX    Tilo                  0.251   app/BMD/BMD_EP/EP_TX/BMD_INTR_CTRL/wr_intr_state_FSM_FFd1
+                                                       app/BMD/BMD_EP/EP_TX/rst_n_inv1
+    SLICE_X2Y120.SR      net (fanout=285)      4.883   app/BMD/BMD_CF/rst_n_0
+    SLICE_X2Y120.CLK     Tsrck                 0.442   app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0<3>
+                                                       app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_1
     -------------------------------------------------  ---------------------------
-    Total                                      7.899ns (1.974ns logic, 5.925ns route)
+    Total                                      9.124ns (2.293ns logic, 6.831ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_3 (SLICE_X2Y120.SR), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.763ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               s6_pcie_v2_4_i/PCIE_A1 (CPU)
+  Destination:          app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_3 (FF)
+  Requirement:          16.000ns
+  Data Path Delay:      9.133ns (Levels of Logic = 1)
+  Clock Path Skew:      0.001ns (0.484 - 0.483)
+  Source Clock:         user_clk rising at 0.000ns
+  Destination Clock:    user_clk rising at 16.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    PCIE_X0Y0.TRNLNKUPN  Tpcicko_TRN           1.600   s6_pcie_v2_4_i/PCIE_A1
+                                                       s6_pcie_v2_4_i/PCIE_A1
+    SLICE_X24Y96.A1      net (fanout=19)       1.960   s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/trn_lnk_up_inv
+    SLICE_X24Y96.AMUX    Tilo                  0.251   app/BMD/BMD_EP/EP_TX/BMD_INTR_CTRL/wr_intr_state_FSM_FFd1
+                                                       app/BMD/BMD_EP/EP_TX/rst_n_inv1
+    SLICE_X2Y120.SR      net (fanout=285)      4.883   app/BMD/BMD_CF/rst_n_0
+    SLICE_X2Y120.CLK     Tsrck                 0.439   app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0<3>
+                                                       app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_3
+    -------------------------------------------------  ---------------------------
+    Total                                      9.133ns (2.290ns logic, 6.843ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.775ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               s6_pcie_v2_4_i/PCIE_A1 (CPU)
+  Destination:          app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_3 (FF)
+  Requirement:          16.000ns
+  Data Path Delay:      9.121ns (Levels of Logic = 1)
+  Clock Path Skew:      0.001ns (0.484 - 0.483)
+  Source Clock:         user_clk rising at 0.000ns
+  Destination Clock:    user_clk rising at 16.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    PCIE_X0Y0.USERRSTN   Tpcicko_RESET         1.600   s6_pcie_v2_4_i/PCIE_A1
+                                                       s6_pcie_v2_4_i/PCIE_A1
+    SLICE_X24Y96.A4      net (fanout=19)       1.948   s6_pcie_v2_4_i/user_reset_out_w
+    SLICE_X24Y96.AMUX    Tilo                  0.251   app/BMD/BMD_EP/EP_TX/BMD_INTR_CTRL/wr_intr_state_FSM_FFd1
+                                                       app/BMD/BMD_EP/EP_TX/rst_n_inv1
+    SLICE_X2Y120.SR      net (fanout=285)      4.883   app/BMD/BMD_CF/rst_n_0
+    SLICE_X2Y120.CLK     Tsrck                 0.439   app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0<3>
+                                                       app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_3
+    -------------------------------------------------  ---------------------------
+    Total                                      9.121ns (2.290ns logic, 6.831ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_2 (SLICE_X2Y120.SR), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.771ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               s6_pcie_v2_4_i/PCIE_A1 (CPU)
+  Destination:          app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_2 (FF)
+  Requirement:          16.000ns
+  Data Path Delay:      9.125ns (Levels of Logic = 1)
+  Clock Path Skew:      0.001ns (0.484 - 0.483)
+  Source Clock:         user_clk rising at 0.000ns
+  Destination Clock:    user_clk rising at 16.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    PCIE_X0Y0.TRNLNKUPN  Tpcicko_TRN           1.600   s6_pcie_v2_4_i/PCIE_A1
+                                                       s6_pcie_v2_4_i/PCIE_A1
+    SLICE_X24Y96.A1      net (fanout=19)       1.960   s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/trn_lnk_up_inv
+    SLICE_X24Y96.AMUX    Tilo                  0.251   app/BMD/BMD_EP/EP_TX/BMD_INTR_CTRL/wr_intr_state_FSM_FFd1
+                                                       app/BMD/BMD_EP/EP_TX/rst_n_inv1
+    SLICE_X2Y120.SR      net (fanout=285)      4.883   app/BMD/BMD_CF/rst_n_0
+    SLICE_X2Y120.CLK     Tsrck                 0.431   app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0<3>
+                                                       app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_2
+    -------------------------------------------------  ---------------------------
+    Total                                      9.125ns (2.282ns logic, 6.843ns route)
                                                        (25.0% logic, 75.0% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16 (RAMB16_X0Y60.RSTB), 1 path
---------------------------------------------------------------------------------
-Slack (setup path):     7.999ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     6.783ns (requirement - (data path - clock path skew + uncertainty))
   Source:               s6_pcie_v2_4_i/PCIE_A1 (CPU)
-  Destination:          s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16 (RAM)
+  Destination:          app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_2 (FF)
   Requirement:          16.000ns
-  Data Path Delay:      7.899ns (Levels of Logic = 1)
-  Clock Path Skew:      0.003ns (0.486 - 0.483)
+  Data Path Delay:      9.113ns (Levels of Logic = 1)
+  Clock Path Skew:      0.001ns (0.484 - 0.483)
   Source Clock:         user_clk rising at 0.000ns
   Destination Clock:    user_clk rising at 16.000ns
   Clock Uncertainty:    0.105ns
@@ -428,56 +559,21 @@ Slack (setup path):     7.999ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.198ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16
+  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
     PCIE_X0Y0.USERRSTN   Tpcicko_RESET         1.600   s6_pcie_v2_4_i/PCIE_A1
                                                        s6_pcie_v2_4_i/PCIE_A1
-    SLICE_X23Y107.D5     net (fanout=2)        2.232   s6_pcie_v2_4_i/user_reset_out_w
-    SLICE_X23Y107.D      Tilo                  0.259   s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/trn_rsrc_dsc_d
-                                                       s6_pcie_v2_4_i/user_reset_out1_INV_0
-    RAMB16_X0Y60.RSTB    net (fanout=29)       3.693   user_reset
-    RAMB16_X0Y60.CLKB    Trcck_RST             0.115   s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16
-                                                       s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16
+    SLICE_X24Y96.A4      net (fanout=19)       1.948   s6_pcie_v2_4_i/user_reset_out_w
+    SLICE_X24Y96.AMUX    Tilo                  0.251   app/BMD/BMD_EP/EP_TX/BMD_INTR_CTRL/wr_intr_state_FSM_FFd1
+                                                       app/BMD/BMD_EP/EP_TX/rst_n_inv1
+    SLICE_X2Y120.SR      net (fanout=285)      4.883   app/BMD/BMD_CF/rst_n_0
+    SLICE_X2Y120.CLK     Tsrck                 0.431   app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0<3>
+                                                       app/BMD/BMD_EP/BMD_GEN2_I/poll_cntr_7_0_2
     -------------------------------------------------  ---------------------------
-    Total                                      7.899ns (1.974ns logic, 5.925ns route)
+    Total                                      9.113ns (2.282ns logic, 6.831ns route)
                                                        (25.0% logic, 75.0% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16 (RAMB16_X0Y58.RSTA), 1 path
---------------------------------------------------------------------------------
-Slack (setup path):     8.220ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               s6_pcie_v2_4_i/PCIE_A1 (CPU)
-  Destination:          s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16 (RAM)
-  Requirement:          16.000ns
-  Data Path Delay:      7.681ns (Levels of Logic = 1)
-  Clock Path Skew:      0.006ns (0.489 - 0.483)
-  Source Clock:         user_clk rising at 0.000ns
-  Destination Clock:    user_clk rising at 16.000ns
-  Clock Uncertainty:    0.105ns
-
-  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.198ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: s6_pcie_v2_4_i/PCIE_A1 to s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    PCIE_X0Y0.USERRSTN   Tpcicko_RESET         1.600   s6_pcie_v2_4_i/PCIE_A1
-                                                       s6_pcie_v2_4_i/PCIE_A1
-    SLICE_X23Y107.D5     net (fanout=2)        2.232   s6_pcie_v2_4_i/user_reset_out_w
-    SLICE_X23Y107.D      Tilo                  0.259   s6_pcie_v2_4_i/axi_basic_top/rx_inst/rx_pipeline_inst/trn_rsrc_dsc_d
-                                                       s6_pcie_v2_4_i/user_reset_out1_INV_0
-    RAMB16_X0Y58.RSTA    net (fanout=29)       3.475   user_reset
-    RAMB16_X0Y58.CLKA    Trcck_RST             0.115   s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16
-                                                       s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[1].ram/ramb16
-    -------------------------------------------------  ---------------------------
-    Total                                      7.681ns (1.974ns logic, 5.707ns route)
-                                                       (25.7% logic, 74.3% route)
 
 --------------------------------------------------------------------------------
 
@@ -485,87 +581,84 @@ Hold Paths: TS_s6_pcie_v2_4_i_clk_62_5 = PERIOD TIMEGRP "s6_pcie_v2_4_i_clk_62_5
         TS_s6_pcie_v2_4_i_gt_refclk_buf / 0.625 HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point app/BMD/BMD_CF/cfg_intf_state_FSM_FFd2 (SLICE_X16Y95.B5), 1 path
+Paths for end point s6_pcie_v2_4_i/PCIE_A1 (PCIE_X0Y0.TRNTD23), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.414ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               app/BMD/BMD_CF/cfg_intf_state_FSM_FFd3 (FF)
-  Destination:          app/BMD/BMD_CF/cfg_intf_state_FSM_FFd2 (FF)
+Slack (hold path):      0.232ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata_23 (FF)
+  Destination:          s6_pcie_v2_4_i/PCIE_A1 (CPU)
   Requirement:          0.000ns
-  Data Path Delay:      0.414ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.237ns (Levels of Logic = 0)
+  Clock Path Skew:      0.005ns (0.068 - 0.063)
   Source Clock:         user_clk rising at 16.000ns
   Destination Clock:    user_clk rising at 16.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: app/BMD/BMD_CF/cfg_intf_state_FSM_FFd3 to app/BMD/BMD_CF/cfg_intf_state_FSM_FFd2
+  Minimum Data Path at Fast Process Corner: s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata_23 to s6_pcie_v2_4_i/PCIE_A1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y95.BQ      Tcko                  0.200   app/BMD/BMD_CF/cfg_intf_state_FSM_FFd3
-                                                       app/BMD/BMD_CF/cfg_intf_state_FSM_FFd3
-    SLICE_X16Y95.B5      net (fanout=8)        0.093   app/BMD/BMD_CF/cfg_intf_state_FSM_FFd3
-    SLICE_X16Y95.CLK     Tah         (-Th)    -0.121   app/BMD/BMD_CF/cfg_intf_state_FSM_FFd3
-                                                       app/BMD/BMD_CF/cfg_intf_state_FSM_FFd2-In11
-                                                       app/BMD/BMD_CF/cfg_intf_state_FSM_FFd2
+    SLICE_X5Y102.DQ      Tcko                  0.198   s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata<23>
+                                                       s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata_23
+    PCIE_X0Y0.TRNTD23    net (fanout=1)        0.889   s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata<23>
+    PCIE_X0Y0.USERCLK    Tpcickd_TRNTD(-Th)     0.850   s6_pcie_v2_4_i/PCIE_A1
+                                                       s6_pcie_v2_4_i/PCIE_A1
     -------------------------------------------------  ---------------------------
-    Total                                      0.414ns (0.321ns logic, 0.093ns route)
-                                                       (77.5% logic, 22.5% route)
+    Total                                      0.237ns (-0.652ns logic, 0.889ns route)
+                                                       (-275.1% logic, 375.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point app/BMD/BMD_CF/cfg_dwaddr_0 (SLICE_X14Y95.A6), 1 path
+Paths for end point s6_pcie_v2_4_i/PCIE_A1 (PCIE_X0Y0.TRNTD27), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.456ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               app/BMD/BMD_CF/cfg_dwaddr_0 (FF)
-  Destination:          app/BMD/BMD_CF/cfg_dwaddr_0 (FF)
+Slack (hold path):      0.338ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata_27 (FF)
+  Destination:          s6_pcie_v2_4_i/PCIE_A1 (CPU)
   Requirement:          0.000ns
-  Data Path Delay:      0.456ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.345ns (Levels of Logic = 0)
+  Clock Path Skew:      0.007ns (0.068 - 0.061)
   Source Clock:         user_clk rising at 16.000ns
   Destination Clock:    user_clk rising at 16.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: app/BMD/BMD_CF/cfg_dwaddr_0 to app/BMD/BMD_CF/cfg_dwaddr_0
+  Minimum Data Path at Fast Process Corner: s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata_27 to s6_pcie_v2_4_i/PCIE_A1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y95.AQ      Tcko                  0.234   cfg_dwaddr<3>
-                                                       app/BMD/BMD_CF/cfg_dwaddr_0
-    SLICE_X14Y95.A6      net (fanout=2)        0.025   cfg_dwaddr<0>
-    SLICE_X14Y95.CLK     Tah         (-Th)    -0.197   cfg_dwaddr<3>
-                                                       app/BMD/BMD_CF/cfg_intf_state[4]_cfg_dwaddr[9]_select_24_OUT<10>1
-                                                       app/BMD/BMD_CF/cfg_dwaddr_0
+    SLICE_X7Y103.BQ      Tcko                  0.198   s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata<30>
+                                                       s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata_27
+    PCIE_X0Y0.TRNTD27    net (fanout=1)        0.997   s6_pcie_v2_4_i/axi_basic_top/tx_inst/tx_pipeline_inst/reg_tdata<27>
+    PCIE_X0Y0.USERCLK    Tpcickd_TRNTD(-Th)     0.850   s6_pcie_v2_4_i/PCIE_A1
+                                                       s6_pcie_v2_4_i/PCIE_A1
     -------------------------------------------------  ---------------------------
-    Total                                      0.456ns (0.431ns logic, 0.025ns route)
-                                                       (94.5% logic, 5.5% route)
+    Total                                      0.345ns (-0.652ns logic, 0.997ns route)
+                                                       (-189.0% logic, 289.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point app/BMD/BMD_CF/cfg_dwaddr_3 (SLICE_X14Y95.D6), 1 path
+Paths for end point s6_pcie_v2_4_i/PCIE_A1 (PCIE_X0Y0.CFGDWADDR2), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.456ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               app/BMD/BMD_CF/cfg_dwaddr_3 (FF)
-  Destination:          app/BMD/BMD_CF/cfg_dwaddr_3 (FF)
+Slack (hold path):      0.342ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               app/BMD/BMD_CF/cfg_dwaddr_2 (FF)
+  Destination:          s6_pcie_v2_4_i/PCIE_A1 (CPU)
   Requirement:          0.000ns
-  Data Path Delay:      0.456ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.336ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.006ns (0.068 - 0.074)
   Source Clock:         user_clk rising at 16.000ns
   Destination Clock:    user_clk rising at 16.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: app/BMD/BMD_CF/cfg_dwaddr_3 to app/BMD/BMD_CF/cfg_dwaddr_3
+  Minimum Data Path at Fast Process Corner: app/BMD/BMD_CF/cfg_dwaddr_2 to s6_pcie_v2_4_i/PCIE_A1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y95.DQ      Tcko                  0.234   cfg_dwaddr<3>
-                                                       app/BMD/BMD_CF/cfg_dwaddr_3
-    SLICE_X14Y95.D6      net (fanout=2)        0.025   cfg_dwaddr<3>
-    SLICE_X14Y95.CLK     Tah         (-Th)    -0.197   cfg_dwaddr<3>
-                                                       app/BMD/BMD_CF/cfg_intf_state[4]_cfg_dwaddr[9]_select_24_OUT<7>1
-                                                       app/BMD/BMD_CF/cfg_dwaddr_3
+    SLICE_X13Y97.BQ      Tcko                  0.198   cfg_dwaddr<0>
+                                                       app/BMD/BMD_CF/cfg_dwaddr_2
+    PCIE_X0Y0.CFGDWADDR2 net (fanout=2)        0.988   cfg_dwaddr<2>
+    PCIE_X0Y0.USERCLK    Tpcickc_CFG (-Th)     0.850   s6_pcie_v2_4_i/PCIE_A1
+                                                       s6_pcie_v2_4_i/PCIE_A1
     -------------------------------------------------  ---------------------------
-    Total                                      0.456ns (0.431ns logic, 0.025ns route)
-                                                       (94.5% logic, 5.5% route)
+    Total                                      0.336ns (-0.652ns logic, 0.988ns route)
+                                                       (-194.0% logic, 294.0% route)
 
 --------------------------------------------------------------------------------
 
@@ -583,16 +676,16 @@ Slack: 0.000ns (period - min period limit)
 Slack: 12.876ns (period - min period limit)
   Period: 16.000ns
   Min period limit: 3.124ns (320.102MHz) (Trper_CLKA(Fmax))
-  Physical resource: s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16/CLKA
-  Logical resource: s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16/CLKA
+  Physical resource: s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16/CLKA
+  Logical resource: s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16/CLKA
   Location pin: RAMB16_X0Y56.CLKA
   Clock network: user_clk
 --------------------------------------------------------------------------------
 Slack: 12.876ns (period - min period limit)
   Period: 16.000ns
   Min period limit: 3.124ns (320.102MHz) (Trper_CLKB)
-  Physical resource: s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16/CLKB
-  Logical resource: s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[2].ram/ramb16/CLKB
+  Physical resource: s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16/CLKB
+  Logical resource: s6_pcie_v2_4_i/pcie_bram_top/pcie_brams_tx/brams[0].ram/ramb16/CLKB
   Location pin: RAMB16_X0Y56.CLKB
   Clock network: user_clk
 --------------------------------------------------------------------------------
@@ -605,12 +698,12 @@ Derived Constraints for TS_GT_REFCLK_OUT
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GT_REFCLK_OUT               |     10.000ns|      0.925ns|     10.000ns|            0|            0|            0|         2064|
-| TS_s6_pcie_v2_4_i_gt_refclk_bu|     10.000ns|      3.334ns|     10.000ns|            0|            0|            0|         2064|
+|TS_GT_REFCLK_OUT               |     10.000ns|      0.925ns|     10.000ns|            0|            0|            0|        30579|
+| TS_s6_pcie_v2_4_i_gt_refclk_bu|     10.000ns|      3.334ns|     10.000ns|            0|            0|            0|        30579|
 | f                             |             |             |             |             |             |             |             |
 |  TS_s6_pcie_v2_4_i_clk_125    |      8.000ns|      8.000ns|          N/A|            0|            0|           45|            0|
 |  TS_s6_pcie_v2_4_i_clk_250    |      4.000ns|      3.125ns|          N/A|            0|            0|            0|            0|
-|  TS_s6_pcie_v2_4_i_clk_62_5   |     16.000ns|     16.000ns|          N/A|            0|            0|         2019|            0|
+|  TS_s6_pcie_v2_4_i_clk_62_5   |     16.000ns|     16.000ns|          N/A|            0|            0|        30534|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -627,7 +720,7 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 2064 paths, 0 nets, and 768 connections
+Constraints cover 30579 paths, 0 nets, and 7220 connections
 
 Design statistics:
    Minimum period:  16.000ns{1}   (Maximum frequency:  62.500MHz)
@@ -636,14 +729,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue Apr 03 21:29:51 2018 
+Analysis completed Thu Apr 05 21:20:20 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 286 MB
+Peak Memory Usage: 306 MB
 
 
 

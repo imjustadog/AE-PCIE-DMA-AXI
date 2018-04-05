@@ -1,7 +1,7 @@
 #Release 13.4 - par O.87xd (nt64)
 #Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-#Tue Apr 03 21:29:44 2018
+#Thu Apr 05 21:20:12 2018
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -322,7 +322,7 @@ U12,,,GND,,,,,,,,,,,,
 U13,,IOBM,IO_L14P_D11_2,UNUSED,,2,,,,,,,,,
 U14,,,VCCO_2,,,2,,,,,2.50,,,,
 U15,,IOBM,IO_L5P_2,UNUSED,,2,,,,,,,,,
-U16,led_0,IOB,IO_L2P_CMPCLK_2,OUTPUT,LVCMOS25*,2,12,SLOW,,,,UNLOCATED,NO,NONE,
+U16,led_2,IOB,IO_L2P_CMPCLK_2,OUTPUT,LVCMOS25*,2,12,SLOW,,,,UNLOCATED,NO,NONE,
 U17,,IOBM,IO_L52P_M1DQ14_1,UNUSED,,1,,,,,,,,,
 U18,,IOBS,IO_L52N_M1DQ15_1,UNUSED,,1,,,,,,,,,
 V1,,,GND,,,,,,,,,,,,
@@ -340,7 +340,7 @@ V12,,IOBS,IO_L19N_2,UNUSED,,2,,,,,,,,,
 V13,,IOBS,IO_L14N_D12_2,UNUSED,,2,,,,,,,,,
 V14,,IOBS,IO_L12N_D2_MISO3_2,UNUSED,,2,,,,,,,,,
 V15,,IOBS,IO_L5N_2,UNUSED,,2,,,,,,,,,
-V16,led_2,IOB,IO_L2N_CMPMOSI_2,OUTPUT,LVCMOS25*,2,12,SLOW,,,,UNLOCATED,NO,NONE,
+V16,led_0,IOB,IO_L2N_CMPMOSI_2,OUTPUT,LVCMOS25*,2,12,SLOW,,,,UNLOCATED,NO,NONE,
 V17,,,DONE_2,,,,,,,,,,,,
 V18,,,GND,,,,,,,,,,,,
 

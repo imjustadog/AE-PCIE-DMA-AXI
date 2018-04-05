@@ -69,7 +69,7 @@
 `timescale 1ps/1ps
 
 module axi_trn_rx #(
-  parameter C_DATA_WIDTH = 128,           // RX/TX interface data width
+  parameter C_DATA_WIDTH = 64,           // RX/TX interface data width
   parameter C_FAMILY = "X7",              // Targeted FPGA family
   parameter C_ROOT_PORT = "FALSE",        // PCIe block is in root port mode
   parameter C_PM_PRIORITY = "FALSE",      // Disable TX packet boundary thrtl
@@ -147,6 +147,9 @@ generate begin : m_axis_trn_rd
     assign trn_rd = {m_axis_rx_tdata[31:0], 
                      m_axis_rx_tdata[63:32]};
   end
+  else if(C_DATA_WIDTH == 32) begin : rd_DW_swap_32
+    assign trn_rd = m_axis_rx_tdata;
+  end
  end  
 endgenerate
 
@@ -201,6 +204,9 @@ generate begin : m_axis_trn_rrem
   end
   else if(C_DATA_WIDTH == 64) begin : rkeep_to_rrem_64
     assign trn_rrem    = (m_axis_rx_tkeep[7:4] == 4'hF) ? 1 : 0;
+  end
+  else if(C_DATA_WIDTH == 32) begin : rkeep_to_rrem_32
+    assign trn_rrem    =  1;
   end
 end  
 endgenerate

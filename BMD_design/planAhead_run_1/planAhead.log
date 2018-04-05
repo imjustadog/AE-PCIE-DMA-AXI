@@ -1,8 +1,8 @@
 #-----------------------------------------------------------
 # PlanAhead v13.4 (64-bit)
 # Build 157570 by hdbuild on Fri Dec 16 13:06:31 MST 2011
-# Start of session at: Tue Apr 03 21:30:52 2018
-# Process ID: 10724
+# Start of session at: Thu Apr 05 17:53:45 2018
+# Process ID: 12008
 # Log file: D:/GitHub/AE-PCIE-DMA-AXI/BMD_design/planAhead_run_1/planAhead.log
 # Journal file: D:/GitHub/AE-PCIE-DMA-AXI/BMD_design/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
@@ -55,7 +55,7 @@ Parsing UCF File [D:\GitHub\AE-PCIE-DMA-AXI\GVI_PCIe_x1_Gen1\s6_pcie_v2_4\exampl
 INFO: [Designutils-22] PART constraint ignored, using PlanAhead selected device [D:\GitHub\AE-PCIE-DMA-AXI\GVI_PCIe_x1_Gen1\s6_pcie_v2_4\example_design\xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf:63]
 Finished Parsing UCF File [D:\GitHub\AE-PCIE-DMA-AXI\GVI_PCIe_x1_Gen1\s6_pcie_v2_4\example_design\xilinx_pcie_1_lane_ep_xc6slx45t-csg324-3.ucf]
 INFO: [PlanAhead-566] Unisim Transformation Summary:
-No Unisim elements were transformed.open_netlist_design: Time (s): 14.235w.  Memory (MB): 727.723p 195.672g
+No Unisim elements were transformed.open_netlist_design: Time (s): 13.732w.  Memory (MB): 732.238p 178.129g
 exit
 stop_gui
 INFO: [PlanAhead-261] Exiting PlanAhead...
